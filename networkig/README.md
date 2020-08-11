@@ -3,6 +3,7 @@
 This module create vpc with private and public subnets, NAT instance is used for privte subet internet connections
 
 ## Module Usage
+
 ```
 module "dev" {
   source = "github.com/javahometech/tf-modules//networkig"
@@ -11,6 +12,7 @@ module "dev" {
 ```
 
 ## Module Arguments
+
 * region  chose the region you want to create your stack, default is ``` ap-south-1 ```
 * vpc_cidr cidr block for your vpc, default is ``` 10.0.0.0/16 ```
 * vpc_tenancy, default is ```default```
@@ -21,3 +23,9 @@ module "dev" {
         ap-southeast-2 = "ami-00c1445796bc0a29f"
       }
     ```
+
+## Module Outputs
+
+* vpc_id
+* pri_sub_ids
+* pub_sub_ids
