@@ -1,4 +1,4 @@
-variable "region" {
+variable "stack_region" {
   default     = "ap-south-1"
   description = "Choose region for your vpc"
   type        = string
